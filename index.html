@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+@media screen and (max-width:800px) {
+  .menu, .main, .menu-head, .main-head {
+    width:100%;
+  }
+  .profile{
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 5%;
+      display: block;
+        margin-left: auto;
+      margin-right: auto;
+  }
+  h1{
+      font-size: 4vw;
+  }
+  .main-head p, .info{
+    font-size: 3vw;
+}
+}
+</style>
 </head>
 <body>
 
 <div class="header">
-  <div >
-        <div class="menu-head">
+    <div class="menu-head">
+        <div class="frame">
             <img class="profile" src="img/profile.jpg" ></img>
         </div>
-        <div class="main-head">
-            <h1 style="float:right;">NUTTAPONG CHAIYAWONG(IQ)</h1>
-            <p style="text-indent: 50px;text-align: justify;float:right;">Computer Engineer graduate have been lived in New Zealand for 4 years. Experienced Hospitality Industry Worker with a demonstrated history of working in Front Office and Housekeeping passionate about data engineering, artificial intelligence, machine learning and automated system that make life easier and save time. Skilled in Opera-Software in hospitality industry, Python, Javascript, HTML and basic Linux system.</p>        
-            <h4 class="info"style="float:right;"><img src="img/icon-mobile.jpg"> +64 27-451-6089 <img src="img/icon-mail.png"> iqsnsd@gmail.com <img src="img/icon-address.png"> 7B Malaghan St Queenstown 9300</h4>
-        </div>
-        
+    </div>
+    <div class="main-head">
+        <h1 style="float:right;">NUTTAPONG CHAIYAWONG(IQ)</h1>
+        <p style="text-indent: 50px;text-align: justify;float:right;">Computer Engineer graduate have been lived in New Zealand for 4 years. Experienced Hospitality Industry Worker with a demonstrated history of working in Front Office and Housekeeping passionate about data engineering, artificial intelligence, machine learning and automated system that make life easier and save time. Skilled in Opera-Software in hospitality industry, Python, Javascript, HTML and basic Linux system.</p>        
+        <h4 class="info"style="float:right;"><img src="img/icon-mobile.jpg"> +64 27-451-6089 <img src="img/icon-mail.png"> iqsnsd@gmail.com <img src="img/icon-address.png"> 7B Malaghan St Queenstown 9300</h4>
     </div>
 </div>
-
-<div style="overflow:auto">
+<div class="middle">
   <div class="menu">
     <div>
     <div class="container-skill">
             <h2 class="toppic-side">Skills</h2>
             <ul style="list-style-type:none;">
                 <button class="button"><li>Python</li></button>
-                
                 <button class="button"><li>PHP</li></button>
                 <button class="button"><li>HTML</li></button>
                 <button class="button"><li>C</li></button>
@@ -99,9 +118,9 @@
                 <li><img src="img/icon-checkmark.png">Working with a small team and different culture.</li>
                 <li><img src="img/icon-checkmark.png">Supporting and dealing with guest ex luggage, parking car, booking activity.</li>
                 <li><img src="img/icon-checkmark.png">Contacting guest or agent by face to face, email and phone.</li>
-                <li><img src="img/icon-checkmark.png">Working with flexible shift (Early,Mid day or Late).</li>
-                <li><img src="img/icon-checkmark.png">Working with computer (Opera,Excel,Outlook,RTBS)</li>
-                <li><img src="img/icon-checkmark.png">Co-working with housekeeping team and front desk team</li>
+                <li><img src="img/icon-checkmark.png">Working with flexible shift (Early, Mid and Late).</li>
+                <li><img src="img/icon-checkmark.png">Working with computer (Opera, Excel, Outlook, RTBS).</li>
+                <li><img src="img/icon-checkmark.png">Co-working with housekeeping team and front desk team.</li>
             </ul>
         </div>
         <div class="container-exp">
@@ -114,15 +133,16 @@
                 </span>
             </p>
             <ul style="list-style-type:none;">
-                <li><img src="img/icon-checkmark.png">Working with Big team(40+ member) and different culture</li>
+                <li><img src="img/icon-checkmark.png">Working with Big team(40+ member) and different culture.</li>
                 <li><img src="img/icon-checkmark.png">As a House person, Delivering linen to floor and take dirty linen from housekeeping’s trolley,
     time management and assisting with any extra tasks required e.g. carpet cleaning, shifting
     furniture.</li>
-                <li><img src="img/icon-checkmark.png">Maintaining public areas especially Lobby, public toilet and Bar areas</li>
-                <li><img src="img/icon-checkmark.png">Actioning any request from guest, solving problems and delivering excellent customer service</li>
-                <li><img src="img/icon-checkmark.png">Supporting and working close with Supervisor</li>
+                <li><img src="img/icon-checkmark.png">Maintaining public areas especially Lobby, public toilet and Bar areas.</li>
+                <li><img src="img/icon-checkmark.png">Actioning any request from guest, solving problems and delivering excellent customer service.</li>
+                <li><img src="img/icon-checkmark.png">Supporting and working close with Supervisor.</li>
             </ul>
         </div>
+
         <div class="container-exp">
             <p class="position">TRAINEE </p>
             <p class="company">PROIMAGE ENGINEERING AND COMMUNICATION CO.,LTD </p>
@@ -134,12 +154,12 @@
             </p>
             <ul style="list-style-type:none;">
                 <li><img src="img/icon-checkmark.png">Basic Networking (Set IP, Set VLAN, Assign IP of Customer, Monitoring, Monitoring etc.)</li>
-                <li><img src="img/icon-checkmark.png">Contacts with Customer, Network Operation Center, Seller by telephone</li>
-                <li><img src="img/icon-checkmark.png">Managing jobs and replying to customers by email</li>
-                <li><img src="img/icon-checkmark.png">Coordinating with Network Engineer</li>
-                <li><img src="img/icon-checkmark.png">Installing Operation Systems (Windows Server, Ubuntu, CentOS)</li>
-                <li><img src="img/icon-checkmark.png">Fixing problems (for example A customer can’t access in to a server)</li>
-                <li><img src="img/icon-checkmark.png">Supporting customers</li>
+                <li><img src="img/icon-checkmark.png">Contacts with Customer, Network Operation Center, Seller by telephone.</li>
+                <li><img src="img/icon-checkmark.png">Managing jobs and replying to customers by email.</li>
+                <li><img src="img/icon-checkmark.png">Coordinating with Network Engineer.</li>
+                <li><img src="img/icon-checkmark.png">Installing Operation Systems (Windows Server, Ubuntu, CentOS).</li>
+                <li><img src="img/icon-checkmark.png">Fixing problems (for example A customer can’t access in to a server).</li>
+                <li><img src="img/icon-checkmark.png">Supporting customers.</li>
             </ul>
         </div>
     </div>
@@ -171,16 +191,13 @@
 
   </div>
 </div>
-
 <div class="bottom">
     <a href="https://www.facebook.com/iq.nuttapong" title="facebook"><img class="icon" src="img/icon-fb.png"></img></a>
     <a href="https://www.youtube.com/channel/UCkABaHBj2EC7paADqWxuXOg" title="youtube"><img class="icon" src="img/icon-youtube.png"></img></a>
     <a href="https://www.instagram.com/_ntpq/" title="instagram"><img class="icon" src="img/icon-ig.png"></img></a>
     <a href="https://github.com/ntpq" title="github"><img class="icon" src="img/icon-github.png"></img></a>
     <a href="https://www.linkedin.com/in/nuttapong-chaiyawong-920aaa167/" title="linkedin"><img class="icon" src="img/icon-linkedin.png"></img></a>
-    
 </div>
-
 </body>
 </html>
 
