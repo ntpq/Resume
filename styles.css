@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    overflow:auto;
+  }
+  h1{
+      font-family: 'Rubik Mono One';
+      font-size: 40px;
+  }
+  .bottom{
+      background-color:#228B22;
+      text-align:center;
+      padding:10px;
+      margin-top:7px;
+      color : #FFFFFF;
+      border-radius: 15px;
+  }
+  .menu {
+    float:left;
+    width:25%;
+  }.menu-head {
+    float:left;
+    width:25%;
+  }
+  
+  .main {
+    float:left;
+    width:75%;
+    padding:10px 20px;
+  }
+  .main-head {
+      float:right;
+    width:75%;
+    padding:0 20px;
+    background-color: #228B22;
+    color : #FFFFFF;
+    border-radius: 15px;
+  }
+  
+  .profile
+  {
+      width: 90%;
+      height: auto;
+      border-radius: 50%;
+      text-align: center;
+      vertical-align: middle;
+      margin: auto;
+      
+  }
+  li img
+  {
+      width:25px;
+      height:auto;
+  }
+  .info img{
+      width:20px;
+      height:auto;
+      -webkit-filter: invert(100%); /* Safari/Chrome */
+      filter: invert(100%);
+  }
+  .container-ref img
+  {
+      width:18px;
+      height:auto;
+  
+  }
+  .position{
+      color:#157515;
+      font-weight: bold;
+      font-size:20px;
+  }
+  .company{
+      font-weight: bold;
+      font-size:15px;
+  }
+  .duration-exp ,.duration-Edu{
+      font-style: oblique;
+      font-size:12px;
+      text-align:left;
+      color:#228B22;
+  }
+  .duration-Edu{
+      font-size:15px;
+  }
+  .toppic-main{
+      border-bottom: 5px solid #000;
+      display: inline-block;
+      padding-bottom: 10px;
+      padding-right: 90%;
+      color:#228B22;
+      border-bottom-color:#228B22;
+  }
+  .toppic-side{
+      border-bottom: 5px solid #000;
+      display: inline-block;
+      padding-bottom: 10px;
+      padding-right: 80%;
+      color:#228B22;
+      border-bottom-color:#228B22;
+      margin-top : 30px;
+  }
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15px;
+  }
+  .container-ref2
+  {
+      font-size:14px;
+  }
+  .name-ref
+  {
+      font-size:15px;
+      font-weight: bold;
+      color:#228B22;
+  }
+  #position-ref{
+      font-weight: normal; !important
+      
+  }
+  .icon{
+      width:25px; !important
+      height:auto;
+      -webkit-filter: invert(100%); /* Safari/Chrome */
+      filter: invert(100%);
+  }
