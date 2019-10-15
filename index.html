@@ -5,56 +5,70 @@
 <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<script src="script.js"></script>
 <style>
+/*This Css is for small screen. it is not working some reseaon if i put in css external*/
 @media screen and (max-width:800px) {
-  .menu, .main, .menu-head, .main-head {
-    width:100%;
-  }
-  .profile{
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 5%;
-      display: block;
-        margin-left: auto;
-      margin-right: auto;
-  }
-  h1{
-      font-size: 4vw;
-  }
-  .main-head p, .info{
-    font-size: 3vw;
-}
+      .menu, .main, .menu-head, .main-head{
+        width:100%;
+      }
+      .profile{
+          width: 50%;
+          height: auto;
+          border-radius: 50%;
+          margin-bottom: 5%;
+          display: block;
+            margin-left: auto;
+          margin-right: auto;
+      }
+      h1{
+          font-size: 4vw;
+      }
+      .main-head p, .info{
+        font-size: 3vw;
+    }
+    #show-normal
+    {
+        display: none;
+    }
+    #show-small{
+          display: inline;
+    }
 }
 </style>
 </head>
 <body>
 
 <div class="header">
-    <div class="menu-head">
-        <div class="frame">
-            <img class="profile" src="img/profile.jpg" ></img>
+  <div >
+        <div class="menu-head" sytyle="">
+            <div class="frame">
+                <img class="profile" src="img/profile.jpg" ></img>
+            </div>
         </div>
-    </div>
-    <div class="main-head">
-        <h1 style="float:right;">NUTTAPONG CHAIYAWONG(IQ)</h1>
-        <p style="text-indent: 50px;text-align: justify;float:right;">Computer Engineer graduate have been lived in New Zealand for 4 years. Experienced Hospitality Industry Worker with a demonstrated history of working in Front Office and Housekeeping passionate about data engineering, artificial intelligence, machine learning and automated system that make life easier and save time. Skilled in Opera-Software in hospitality industry, Python, Javascript, HTML and basic Linux system.</p>        
-        <h4 class="info"style="float:right;"><img src="img/icon-mobile.jpg"> +64 27-451-6089 <img src="img/icon-mail.png"> iqsnsd@gmail.com <img src="img/icon-address.png"> 7B Malaghan St Queenstown 9300</h4>
+        <div class="main-head">
+            <h1 id="name"style="float:right;">NUTTAPONG CHAIYAWONG(IQ)</h1>
+            <p style="text-indent: 50px;text-align: justify;float:right;">Computer Engineer graduate have been lived in New Zealand for 4 years. Experienced Hospitality Industry Worker with a demonstrated history of working in Front Office and Housekeeping passionate about data engineering, artificial intelligence, machine learning and automated system that make life easier and save time. Skilled in Opera-Software in hospitality industry, Python, Javascript, HTML and basic Linux system.</p>        
+            <h4 class="info"style="float:right;"><img src="img/icon-mobile.jpg"> +64 27-451-6089 <img src="img/icon-mail.png"> iqsnsd@gmail.com <img src="img/icon-address.png"> 7B Malaghan St Queenstown 9300</h4>
+        </div>
+        
     </div>
 </div>
-<div class="middle">
+
+<div style="overflow:auto">
   <div class="menu">
     <div>
     <div class="container-skill">
-            <h2 class="toppic-side">Skills</h2>
-            <ul style="list-style-type:none;">
-                <button class="button"><li>Python</li></button>
-                <button class="button"><li>PHP</li></button>
-                <button class="button"><li>HTML</li></button>
-                <button class="button"><li>C</li></button>
-                <button class="button"><li>SQL</li></button>
-                <button class="button"><li>Java Script</li></button>
-                <button class="button"><li>Linux Basic</li></button>
+                <h2 class="toppic-side" style"text-align:left;">Skills</h2>
+            <ul id="dynamic-list" style="list-style-type:none;">
+                <li class="button"  id="Python" onclick = "removeOriginal(this.id)">Python</li>
+                <li class="button" id="PHP" onclick = "removeOriginal(this.id)">PHP</li>
+                <li class="button" id="HTML" onclick = "removeOriginal(this.id)">HTML</li>
+                <li class="button" id="C" onclick = "removeOriginal(this.id)">C</li>
+                <li class="button" id="SQL" onclick = "removeOriginal(this.id)">SQL</li>
+                <li class="button" id="Java Script" onclick = "removeOriginal(this.id)">Java Script</li>
+                <li class="button" id="Linux Basic" onclick = "removeOriginal(this.id)">Linux Basic</li>
+                <img id="icon-add"src="img/icon-plus.png" onclick="addItem()" style="width:50px;cursor: pointer;">
             </ul>
     </div>
     <div class="container-Language">
@@ -75,7 +89,7 @@
                 <li><img src="img/icon-badge.png">Automated system for Snow Report </li>
             </ul>
     </div>
-    <div class="container-ref">
+    <div class="container-ref" id='show-normal'>
             <h2 class="toppic-side">Reference</h2>
             <div class="container-ref2">
                 <p class="name-ref" style"text-align:left;">
@@ -118,9 +132,9 @@
                 <li><img src="img/icon-checkmark.png">Working with a small team and different culture.</li>
                 <li><img src="img/icon-checkmark.png">Supporting and dealing with guest ex luggage, parking car, booking activity.</li>
                 <li><img src="img/icon-checkmark.png">Contacting guest or agent by face to face, email and phone.</li>
-                <li><img src="img/icon-checkmark.png">Working with flexible shift (Early, Mid and Late).</li>
-                <li><img src="img/icon-checkmark.png">Working with computer (Opera, Excel, Outlook, RTBS).</li>
-                <li><img src="img/icon-checkmark.png">Co-working with housekeeping team and front desk team.</li>
+                <li><img src="img/icon-checkmark.png">Working with flexible shift (Early,Mid day or Late).</li>
+                <li><img src="img/icon-checkmark.png">Working with computer (Opera,Excel,Outlook,RTBS)</li>
+                <li><img src="img/icon-checkmark.png">Co-working with housekeeping team and front desk team</li>
             </ul>
         </div>
         <div class="container-exp">
@@ -133,16 +147,15 @@
                 </span>
             </p>
             <ul style="list-style-type:none;">
-                <li><img src="img/icon-checkmark.png">Working with Big team(40+ member) and different culture.</li>
+                <li><img src="img/icon-checkmark.png">Working with Big team(40+ member) and different culture</li>
                 <li><img src="img/icon-checkmark.png">As a House person, Delivering linen to floor and take dirty linen from housekeeping’s trolley,
     time management and assisting with any extra tasks required e.g. carpet cleaning, shifting
     furniture.</li>
-                <li><img src="img/icon-checkmark.png">Maintaining public areas especially Lobby, public toilet and Bar areas.</li>
-                <li><img src="img/icon-checkmark.png">Actioning any request from guest, solving problems and delivering excellent customer service.</li>
-                <li><img src="img/icon-checkmark.png">Supporting and working close with Supervisor.</li>
+                <li><img src="img/icon-checkmark.png">Maintaining public areas especially Lobby, public toilet and Bar areas</li>
+                <li><img src="img/icon-checkmark.png">Actioning any request from guest, solving problems and delivering excellent customer service</li>
+                <li><img src="img/icon-checkmark.png">Supporting and working close with Supervisor</li>
             </ul>
         </div>
-
         <div class="container-exp">
             <p class="position">TRAINEE </p>
             <p class="company">PROIMAGE ENGINEERING AND COMMUNICATION CO.,LTD </p>
@@ -154,12 +167,12 @@
             </p>
             <ul style="list-style-type:none;">
                 <li><img src="img/icon-checkmark.png">Basic Networking (Set IP, Set VLAN, Assign IP of Customer, Monitoring, Monitoring etc.)</li>
-                <li><img src="img/icon-checkmark.png">Contacts with Customer, Network Operation Center, Seller by telephone.</li>
-                <li><img src="img/icon-checkmark.png">Managing jobs and replying to customers by email.</li>
-                <li><img src="img/icon-checkmark.png">Coordinating with Network Engineer.</li>
-                <li><img src="img/icon-checkmark.png">Installing Operation Systems (Windows Server, Ubuntu, CentOS).</li>
-                <li><img src="img/icon-checkmark.png">Fixing problems (for example A customer can’t access in to a server).</li>
-                <li><img src="img/icon-checkmark.png">Supporting customers.</li>
+                <li><img src="img/icon-checkmark.png">Contacts with Customer, Network Operation Center, Seller by telephone</li>
+                <li><img src="img/icon-checkmark.png">Managing jobs and replying to customers by email</li>
+                <li><img src="img/icon-checkmark.png">Coordinating with Network Engineer</li>
+                <li><img src="img/icon-checkmark.png">Installing Operation Systems (Windows Server, Ubuntu, CentOS)</li>
+                <li><img src="img/icon-checkmark.png">Fixing problems (for example A customer can’t access in to a server)</li>
+                <li><img src="img/icon-checkmark.png">Supporting customers</li>
             </ul>
         </div>
     </div>
@@ -188,16 +201,55 @@
             </div>
         </div>
     </div>
-
+    <div class="container-ref" id='show-small'>
+            <h2 class="toppic-side">Reference</h2>
+            <div class="container-ref2">
+                <p class="name-ref" style"text-align:left;">
+                    Hayley Carrington
+                    <span id="position-ref" style="float:right;font-style: oblique;">
+                        Talent and Culture Advisor
+                    </span>
+                </p>
+                <p clsss="company-ref">Hotel St Moritz Queenstown, New Zealand</p>
+                <p clsss="phone-ref"><img src="img/icon-mobile.jpg">021-181-9978</p>
+                <br>
+            </div>
+            <div class="container-ref2">
+                <p class="name-ref" style"text-align:left;">
+                    Elvis Pasanna
+                    <span id="position-ref" style="float:right;font-style: oblique;">
+                        Executive Housekeeper
+                    </span>
+                </p>
+                <p clsss="company-ref">Novotel Queenstown Lakeside, New Zealand</p>
+                <p clsss="phone-ref"><img src="img/icon-mobile.jpg">021-711-464</p>
+                <br>
+            </div>
+    </div>
   </div>
 </div>
 <div class="bottom">
-    <a href="https://www.facebook.com/iq.nuttapong" title="facebook"><img class="icon" src="img/icon-fb.png"></img></a>
-    <a href="https://www.youtube.com/channel/UCkABaHBj2EC7paADqWxuXOg" title="youtube"><img class="icon" src="img/icon-youtube.png"></img></a>
-    <a href="https://www.instagram.com/_ntpq/" title="instagram"><img class="icon" src="img/icon-ig.png"></img></a>
-    <a href="https://github.com/ntpq" title="github"><img class="icon" src="img/icon-github.png"></img></a>
-    <a href="https://www.linkedin.com/in/nuttapong-chaiyawong-920aaa167/" title="linkedin"><img class="icon" src="img/icon-linkedin.png"></img></a>
+    <a href="https://www.facebook.com/iq.nuttapong" title="facebook"><img class="icon" src="img/icon-fb.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></img></a>
+    <a href="https://www.youtube.com/channel/UCkABaHBj2EC7paADqWxuXOg" title="youtube"><img class="icon" src="img/icon-youtube.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></img></a>
+    <a href="https://www.instagram.com/_ntpq/" title="instagram"><img class="icon" src="img/icon-ig.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></img></a>
+    <a href="https://github.com/ntpq" title="github"><img class="icon" src="img/icon-github.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></img></a>
+    <a href="https://www.linkedin.com/in/nuttapong-chaiyawong-920aaa167/" title="linkedin"><img class="icon" src="img/icon-linkedin.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></img></a>
 </div>
+
+
+
+<button class="open-button" onclick="openForm()">Click to Edit</button>
+    <div class="form-popup" id="myForm">
+    <form  class="form-container">
+        <h1>Editor</h1>
+
+        <label for="email"><b>background color :</b><input type="color" id="myColor" value="#ffffff"></label>
+        <input id="editName" type="text" placeholder="Enter Email"> 
+
+        <button type="button" class="btn" onclick="edit()">Edit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
 </body>
 </html>
 
